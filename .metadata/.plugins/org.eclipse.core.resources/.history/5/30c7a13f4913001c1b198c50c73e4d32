@@ -1,0 +1,17 @@
+package com.devsuperior.dsvendas.service;
+
+import org.springframework.stereotype.Service;
+
+import com.devsuperior.dsvendas.repositories.SellerRepositories;
+
+@Service 
+public class SellerService {
+	
+	private SellerRepositories repository;
+	
+	public List<Seller> findAll(){
+		return repository.findAll();
+	}
+	
+	
+}
